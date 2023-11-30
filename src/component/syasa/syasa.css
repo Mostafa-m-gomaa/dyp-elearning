@@ -1,0 +1,18 @@
+.syasa {
+    padding: 120px 0;
+    direction: rtl;
+}
+.syasa .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85% !important;
+    max-width: 85%;
+    font-size: 17px;
+    overflow: hidden;
+}
+.syasa .container div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

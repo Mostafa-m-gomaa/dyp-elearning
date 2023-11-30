@@ -1,0 +1,88 @@
+.landing {
+  width: 100%;
+  padding: 150px 0 50px 0;
+  background-color: rgb(141, 155, 141);
+  margin-bottom: 30px;
+  height: 70vh;
+}
+@media (max-width: 767px) {
+  .landing {
+    background-color: white;
+  }
+}
+.landing .container {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  .landing .container {
+    flex-direction: column;
+  }
+}
+.landing .container .left {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .landing .container .left {
+    width: 90%;
+  }
+}
+.landing .container .left a {
+  background-color: var(--my-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.landing .container .left div {
+  font-size: 25px;
+  margin: 40px 0;
+  color: rgb(43, 45, 46);
+  line-height: 20px;
+}
+.landing .container .right {
+  width: 50%;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .landing .container .right {
+    width: 90%;
+    background-color: aqua;
+  }
+}
+.landing .container .right img {
+  position: relative;
+  width: 500px;
+  animation: up-and-down 5s linear infinite;
+  border-radius: 100px;
+}
+@media (max-width: 767px) {
+  .landing .container .right img {
+    width: 250px;
+  }
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 0;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+@keyframes up-and-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -50px;
+  }
+}/*# sourceMappingURL=landing.css.map */

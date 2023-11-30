@@ -1,0 +1,16 @@
+.not {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 250px;
+}
+.not .box {
+  background-color: rgba(20, 10, 105, 0.658);
+  color: white;
+  width: 30%;
+  padding: 100px 40px;
+  position: relative;
+  border-radius: 15px;
+  border: 4px solid white;
+  margin: auto;
+  font-size: 30px;
+}/*# sourceMappingURL=not.css.map */

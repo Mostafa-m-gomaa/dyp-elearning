@@ -1,0 +1,44 @@
+.footer {
+  padding: 20px 0;
+  background-color: var(--my-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 45% 55% 0% 15%/18% 17% 41% 0%;
+  text-align: center;
+}
+.footer .syasa {
+  color: black;
+  border-bottom: 2px solid;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  transition: 0.2s;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 5px;
+}
+.footer .syasa:hover {
+  color: blue;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+  color: wheat;
+}
+.footer img {
+  width: 100px;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 1px;
+  background-color: white;
+  border-radius: 50%;
+}
+.footer .contacts {
+  flex-direction: row;
+  justify-content: center;
+}
+.footer .contacts img {
+  width: 30px;
+}/*# sourceMappingURL=footer.css.map */

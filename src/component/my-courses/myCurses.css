@@ -1,0 +1,61 @@
+.my-courses {
+  padding: 150px 0;
+}
+.my-courses .courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px -5px;
+}
+@media (max-width: 767px) {
+  .my-courses .courses {
+    padding: 20px 10px;
+  }
+}
+.my-courses .courses .course {
+  padding: 8px;
+  border: 3px solid rgb(166, 194, 192);
+  border-radius: 15px;
+  text-align: center;
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .my-courses .courses .course {
+    overflow: hidden;
+    width: 40%;
+  }
+}
+.my-courses .courses .course img {
+  border-radius: 15px;
+  max-width: 140px;
+  min-width: 140px;
+  max-height: 120px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .my-courses .courses .course img {
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 80px;
+    min-height: 80px;
+  }
+}
+.my-courses .courses .course a {
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .my-courses .courses .course a {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=myCurses.css.map */

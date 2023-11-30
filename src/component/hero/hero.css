@@ -1,0 +1,188 @@
+.hero {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 100%;
+  position: relative;
+  padding-bottom: 270px;
+  overflow: hidden;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 20px;
+}
+.hero h1 {
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+  background: none;
+  color: rgb(17, 17, 17);
+  text-align: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+.hero .btns {
+  position: relative;
+  z-index: 5;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .hero .btns {
+    padding: 1px 0;
+  }
+}
+.hero .btns .card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.hero .btns .card2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  padding: 20px;
+  gap: 15px;
+  background-color: rgb(7, 16, 45);
+  background: linear-gradient(to top right, rgb(7, 16, 45), rgb(58, 60, 84));
+  background: -webkit-linear-gradient(to top right, rgb(7, 16, 45), rgb(58, 60, 84));
+  transition: 0.3s;
+}
+.hero .btns .card2 img {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 130px;
+  max-height: 130px;
+  border-radius: 5px;
+}
+.hero .btns a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  width: 70%;
+  margin: auto;
+}
+.hero .btns a:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFD401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+.hero .btns a:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+.hero .btns a span {
+  text-align: center;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+.hero .btns a:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spin-cont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 230;
+  background-color: white;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  z-index: 260;
+  width: 200px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 20px;
+  display: inline-block;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  animation-delay: -0.8s;
+}
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+.card2:hover {
+  transform: scale(0.97);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgb(5, 5, 5);
+}/*# sourceMappingURL=hero.css.map */

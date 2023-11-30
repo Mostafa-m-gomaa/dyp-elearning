@@ -1,0 +1,56 @@
+.my-certi {
+  padding: 150px 0;
+}
+.my-certi .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.my-certi .certi {
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(136, 136, 126);
+}
+.my-certi .certi .name {
+  position: absolute;
+  left: 47%;
+  top: 26%;
+  color: rgb(63, 63, 63);
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "Cairo", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Lobster", cursive;
+}
+@media (max-width: 767px) {
+  .my-certi .certi .name {
+    font-size: 20px;
+    left: 40%;
+  }
+}
+.my-certi .certi .course-name {
+  position: absolute;
+  left: 47%;
+  top: 45%;
+  color: rgb(63, 63, 63);
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .my-certi .certi .course-name {
+    font-size: 20px;
+  }
+}
+.my-certi .certi img {
+  width: 600px;
+  margin: 0 auto;
+  position: -ms-page;
+  border-radius: 10px;
+  margin-left: 25%;
+}
+@media (max-width: 767px) {
+  .my-certi .certi img {
+    margin: auto;
+    width: 100%;
+  }
+}/*# sourceMappingURL=myCerti.css.map */

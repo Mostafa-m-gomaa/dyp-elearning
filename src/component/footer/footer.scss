@@ -1,0 +1,46 @@
+.footer{
+    padding: 20px 0;
+    background-color: var(--my-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 45% 55% 0% 15% / 18% 17% 41% 0% ;
+    text-align: center;
+    .syasa{
+        color: black;
+        border-bottom: 2px solid;
+        max-width: fit-content;
+        margin: 0 auto;
+        transition: 0.2s;
+        max-height: fit-content;
+        padding: 5px;
+        &:hover{
+            color: blue;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 20px;
+        color: wheat;
+        
+       
+    }
+    img{
+        width: 100px;
+        border: 2px solid gray;
+        margin: auto;
+        padding: 1px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .contacts {
+        flex-direction: row;
+        justify-content: center;
+        
+        img{
+            width: 30px;
+        
+        }
+    }
+}
